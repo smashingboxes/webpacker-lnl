@@ -19,6 +19,7 @@ gem "sass-rails", "~> 5.0"
 gem "taperole", "~> 2.0"
 gem "uglifier", ">= 1.3.0"
 gem 'webpacker', '~> 3.5'
+gem "react_on_rails", "11.0.9"
 
 group :development, :test do
   gem "annotate"
