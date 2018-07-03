@@ -10,7 +10,7 @@ ruby "2.4.2"
 gem "rails", "~> 5.1.4"
 
 gem "coffee-rails", "~> 4.2"
-
+gem "mini_racer"
 gem "mailgun-ruby"
 # TODO: bump this to ~> 1.0.0, once this gets resolved: https://github.com/rails/rails/pull/31671
 gem "pg", "~> 0.21.0"
@@ -45,3 +45,5 @@ group :development do
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "web-console", ">= 3.3.0"
 end
+
+gem 'mini_racer', platforms: :ruby
