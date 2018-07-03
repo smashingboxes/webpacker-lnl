@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: webpacker_lnl_development
+
+test:
+  <<: *default
+  database: webpacker_lnl_test
+
+production:
+  <<: *default
+  database: webpacker_lnl_production
+  username: webpacker_lnl
+  password: <%= ENV['WEBPACKER-LNL_DATABASE_PASSWORD'] %>
